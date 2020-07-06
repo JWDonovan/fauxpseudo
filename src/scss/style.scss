@@ -1,0 +1,379 @@
+$font-family: "Lato", sans-serif;
+$font-size: 16px;
+
+$gray: #222;
+$gray-dark: #111;
+$gray-light: #888;
+$green: #66bb6a;
+$red: #ef5350;
+$red-bright: #ff1744;
+$white: #fff;
+
+$twitch-color: #9147ff;
+$twitter-color: #1da1f2;
+$instagram-color: #c13584;
+$youtube-color: #ff0000;
+$facebook-color: #1278f3;
+
+html {
+    font: $font-size $font-family;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: $gray;
+    min-height: 100vh;
+}
+
+.nav-wrapper {
+    background-color: $gray-dark;
+    padding: 0 2em;
+}
+
+.brand-logo-img {
+    line-height: 4em;
+    vertical-align: middle;
+    width: 2em;
+}
+
+.sidenav-logo {
+    display: block;
+    margin: 2em auto;
+}
+
+.dropdown-svg {
+    height: 1.25em;
+    margin-right: .25em;
+    vertical-align: middle;
+}
+
+.twitch-svg {
+    fill: $twitch-color;
+}
+
+.twitter-svg {
+    fill: $twitter-color;
+}
+
+.instagram-svg {
+    fill: $instagram-color;
+}
+
+.youtube-svg {
+    fill: $youtube-color;
+}
+
+.facebook-svg {
+    fill: $facebook-color;
+}
+
+.bottom {
+    bottom: 7em;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.row-one {
+    margin-bottom: .5em;
+}
+
+.row-one,
+.row-two {
+    .mobile-svg {
+        margin-right: .5em;
+    }
+    
+    .instagram-svg,
+    .facebook-svg {
+        margin-right: 0;
+    }
+}
+
+.mobile-svg {
+    height: 2em;
+}
+
+.hero {
+    margin: 4em;
+    text-align: center;
+    
+    &-img {
+        border-radius: 50%;
+        max-width: 75%;
+        width: 15em;
+    }
+    
+    &-description {
+        color: $gray-light;
+        font-size: .8em;
+        
+        @media screen and (max-width: 450px) {
+            font-size: .5em;
+        }
+        
+        @media screen and (max-width: 300px) {
+            font-size: .4em;
+        }
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 0 4em;
+    
+    &-link {
+        margin-bottom: 1em;
+        width: 6em;
+    }
+    
+    &-svg {
+        fill: $white;
+        transition: .3s fill;
+    }
+    
+    &-label {
+        color: $gray-light;
+        font-size: .8em;
+        margin: 0;
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 700px) {
+        &-link {
+            max-width: 4em;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        align-items: center;
+        flex-direction: column;
+        
+        &-link {
+            max-width: 6em;
+        }
+    }
+    
+    @media screen and (max-width: 425px) {
+        &-link {
+            max-width: 4em;
+        }
+    }
+}
+
+.live {
+    height: 100vh;
+    max-height: 100vh;
+}
+
+// .contact {
+//     margin: 0 auto;
+//     max-width: 30em;
+//     padding: 8em 4em;
+    
+//     @media screen and (max-width: 400px) {
+//         h3 {
+//             font-size: 1.5em;
+//         }
+//     }
+// }
+
+.contact {
+    background: url('https://raw.githubusercontent.com/JWDonovan/fauxpseudo/master/img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+    &-form {
+        background-color: $white;
+        margin: 0 auto;
+        max-width: 30em;
+        padding: 8em 4em;
+        
+        @media screen and (max-width: 400px) {
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field textarea:focus + label {
+    color: $red !important;
+}
+
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field textarea:focus {
+    border-bottom: 1px solid $red !important;
+    box-shadow: 0 1px 0 0 $red !important;
+}
+
+/* valid color */
+.input-field input[type=text].valid,
+.input-field input[type=email].valid,
+.input-field textarea.valid {
+    border-bottom: 1px solid $green;
+    box-shadow: 0 1px 0 0 $green;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid,
+.input-field input[type=email].invalid,
+.input-field textarea.invalid {
+    border-bottom: 1px solid $red-bright;
+    box-shadow: 0 1px 0 0 $red-bright
+}  
+
+.send-svg {
+    fill: $white;
+    margin-right: .25em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+.page-footer {
+    background-color: $gray-dark;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 2em;
+}
+
+.footer-social-links {
+    fill: $white;
+    height: 1.5em;
+    margin-right: .5em;
+}
+
+.twitch-subscribe {    
+    &-svg {
+        fill: $white;
+        margin-right: .25em;
+        vertical-align: middle;
+        width: 1em;
+    }
+    
+    &-footer {
+        margin-top: .5em;
+    }
+}
+
+/* TODO: Fix naming conflict with Sidenav SVGs */
+.twitch-svg:hover {
+    fill: $twitch-color;
+}
+
+.twitter-svg:hover {
+    fill: $twitter-color;
+}
+
+.instagram-svg:hover {
+    fill: $instagram-color;
+}
+
+.youtube-svg:hover {
+    fill: $youtube-color;
+}
+
+.facebook-svg:hover {
+    fill: $facebook-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}

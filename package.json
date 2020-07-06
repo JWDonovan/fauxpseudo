@@ -1,0 +1,26 @@
+{
+    "author": "James Donovan <jameswilliamdonovan@gmail.com>",
+    "bugs": {
+        "url": "https://github.com/JWDonovan/fauxpseudo/issues"
+    },
+    "description": "",
+    "homepage": "https://github.com/JWDonovan/fauxpseudo#readme",
+    "license": "MIT",
+    "main": "index.js",
+    "name": "fauxpseudo",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JWDonovan/fauxpseudo.git"
+    },
+    "scripts": {
+        "build": "parcel build src/pug/index.pug",
+        "dev": "parcel src/pug/index.pug"
+    },
+    "version": "0.1.0",
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "pug": "^3.0.0",
+        "sass": "^1.26.9",
+        "typescript": "^3.9.6"
+    }
+}

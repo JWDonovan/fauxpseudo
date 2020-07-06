@@ -1,0 +1,187 @@
+- var twitchURL = "https://www.twitch.tv/imfauxpseudo"
+- var twitterURL = "https://twitter.com/realfauxpseudo"
+- var instagramURL = "https://www.instagram.com/itzfauxpseudo"
+- var youtubeURL = "https://www.youtube.com/fauxpseudo"
+- var facebookURL = "https://www.facebook.com/Fauxpseudo"
+- var twitchSubscribeURL = "https://www.twitch.tv/subs/imfauxpseudo"
+- var viewBox = "0 0 1792 1792"
+
+doctype html
+html(lang="en-us")
+    head
+        meta(charset="utf-8")
+        meta(content="width=device-width, initial-scale=1.0" name="viewport")
+        title Faux Pseudo
+        link(href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(href="../scss/style.scss" rel="stylesheet")
+    body
+        header.header
+            ul.dropdown-content#social-dropdown
+                li
+                    a(href=twitchURL)
+                        svg(viewBox=viewBox).dropdown-svg.twitch-svg
+                            path(d="M896 434v434h-145v-434h145zm398 0v434h-145v-434h145zm0 760l253-254v-795h-1194v1049h326v217l217-217h398zm398-1194v1013l-434 434h-326l-217 217h-217v-217h-398v-1158l109-289h1483z")#twitch
+                        | Twitch
+                li
+                    a(href=twitterURL)
+                        svg(viewBox=viewBox).dropdown-svg.twitter-svg
+                            path(d="M1408 610q-56 25-121 34 68-40 93-117-65 38-134 51-61-66-153-66-87 0-148.5 61.5t-61.5 148.5q0 29 5 48-129-7-242-65t-192-155q-29 50-29 106 0 114 91 175-47-1-100-26v2q0 75 50 133.5t123 72.5q-29 8-51 8-13 0-39-4 21 63 74.5 104t121.5 42q-116 90-261 90-26 0-50-3 148 94 322 94 112 0 210-35.5t168-95 120.5-137 75-162 24.5-168.5q0-18-1-27 63-45 105-109zm256-194v960q0 119-84.5 203.5t-203.5 84.5h-960q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z")#twitter
+                        | Twitter
+                li
+                    a(href=instagramURL)
+                        svg(viewBox=viewBox).dropdown-svg.instagram-svg
+                            path(d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm138 0q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zm108-410q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zm-502-220q-7 0-76.5-.5t-105.5 0-96.5 3-103 10-71.5 18.5q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5.5 76.5-.5 76.5 0 105.5 3 96.5 10 103 18.5 71.5q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-.5 76.5.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-.5-76.5.5-76.5 0-105.5-3-96.5-10-103-18.5-71.5q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5.5zm768 630q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z")#instagram
+                        | Instagram
+                li
+                    a(href=youtubeURL)
+                        svg(viewBox=viewBox).dropdown-svg.youtube-svg
+                            path(d="M711 1128l484-250-484-253v503zm185-862q168 0 324.5 4.5t229.5 9.5l73 4q1 0 17 1.5t23 3 23.5 4.5 28.5 8 28 13 31 19.5 29 26.5q6 6 15.5 18.5t29 58.5 26.5 101q8 64 12.5 136.5t5.5 113.5v176q1 145-18 290-7 55-25 99.5t-32 61.5l-14 17q-14 15-29 26.5t-31 19-28 12.5-28.5 8-24 4.5-23 3-16.5 1.5q-251 19-627 19-207-2-359.5-6.5t-200.5-7.5l-49-4-36-4q-36-5-54.5-10t-51-21-56.5-41q-6-6-15.5-18.5t-29-58.5-26.5-101q-8-64-12.5-136.5t-5.5-113.5v-176q-1-145 18-290 7-55 25-99.5t32-61.5l14-17q14-15 29-26.5t31-19.5 28-13 28.5-8 23.5-4.5 23-3 17-1.5q251-18 627-18z")#youtube
+                        | YouTube
+                li
+                    a(href=facebookURL)
+                        svg(viewBox=viewBox).dropdown-svg.facebook-svg
+                            path(d="M1376 128q119 0 203.5 84.5t84.5 203.5v960q0 119-84.5 203.5t-203.5 84.5h-188v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-532q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960z")#facebook
+                        | Facebook
+
+            ul.sidenav#mobile-menu
+                img(alt="Logo" src="https://raw.githubusercontent.com/JWDonovan/fauxpseudo/master/img/logo.png").sidenav-logo
+
+                li
+                    a(href="#live").sidenav-close Watch Live
+                li
+                    a(href="#contact").sidenav-close Contact
+                li
+                    a(href=twitchSubscribeURL).btn.waves-effect.waves-light.twitch-subscribe.red.lighten-1
+                        svg(viewBox=viewBox).twitch-subscribe-svg
+                            use(href="#twitch")
+                        | Subscribe
+                .bottom
+                    .row-one
+                        a(href=twitchURL)
+                            svg(viewBox=viewBox).mobile-svg.twitch-svg
+                                use(href="#twitch")
+                        a(href=twitterURL)
+                            svg(viewBox=viewBox).mobile-svg.twitter-svg
+                                use(href="#twitter")
+                        a(href=instagramURL)
+                            svg(viewBox=viewBox).mobile-svg.instagram-svg
+                                use(href="#instagram")
+
+                    .row-two
+                        a(href=youtubeURL)
+                            svg(viewBox=viewBox).mobile-svg.youtube-svg
+                                use(href="#youtube")
+                        a(href=facebookURL)
+                            svg(viewBox=viewBox).mobile-svg.facebook-svg
+                                use(href="#facebook")
+
+            nav(role="navigation")
+                .nav-wrapper
+                    a(href="https://fauxpseudo.com").brand-logo
+                        img(alt="Logo" src="https://raw.githubusercontent.com/JWDonovan/fauxpseudo/master/img/logo.png").brand-logo-img
+                    a(data-target="mobile-menu" href="#").sidenav-trigger
+                        i.material-icons menu
+                    ul.right.hide-on-med-and-down
+                        li
+                            a(href="#live") Watch Live
+                        li
+                            a(href="#contact") Contact
+                        li
+                            a(href=twitchSubscribeURL).btn.waves-effect.waves-light.twitch-subscribe.red.lighten-1
+                                svg(viewBox=viewBox).twitch-subscribe-svg
+                                    use(href="#twitch")
+                                | Subscribe
+                        li
+                            a(data-target="social-dropdown" href="#!").dropdown-trigger
+                                | Social
+                                i.material-icons.right arrow_drop_down
+
+            section.hero
+                a(href="https://fauxpseudo.com")
+                    img(alt="Picture of Faux Pseudo" src="https://raw.githubusercontent.com/JWDonovan/fauxpseudo/master/img/avatar.jpg").hero-img
+                p.hero-description Streamer | Workaholic | Gamer
+
+            section.links
+                a(href=twitchURL).links-link.hvr-float-shadow
+                    svg(viewBox=viewBox).links-svg.twitch-svg
+                        use(href="#twitch")
+                    p.links-label Twitch
+                a(href=twitterURL).links-link.hvr-float-shadow
+                    svg(viewBox=viewBox).links-svg.twitter-svg
+                        use(href="#twitter")
+                    p.links-label Twitter
+                a(href=instagramURL).links-link.hvr-float-shadow
+                    svg(viewBox=viewBox).links-svg.instagram-svg
+                        use(href="#instagram")
+                    p.links-label Instagram
+                a(href=youtubeURL).links-link.hvr-float-shadow
+                    svg(viewBox=viewBox).links-svg.youtube-svg
+                        use(href="#youtube")
+                    p.links-label YouTube
+                a(href=facebookURL).links-link.hvr-float-shadow
+                    svg(viewBox=viewBox).links-svg.facebook-svg
+                        use(href="#facebook")
+                    p.links-label Facebook
+
+        section.live#live
+
+        section.contact#contact
+            form(data-netlify="true" method="post" name="contact").contact-form
+                h3 Hit Me Up!
+
+                .input-field
+                    input(name="email" required type="email").validate#email
+                    label(for="email") Email
+                .input-field
+                    textarea(name="message" required).materialize-textarea.validate#message
+                    label(for="message") Message
+                button(name="submit" type="submit").btn.waves-effect.waves-light.red.lighten-1.right
+                    svg(viewBox=viewBox).send-svg
+                        path(d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45-14 8-31 8-11 0-24-5l-453-185-242 295q-18 23-49 23-13 0-22-4-19-7-30.5-23.5t-11.5-36.5v-349l864-1059-1069 925-395-162q-37-14-40-55-2-40 32-59l1664-960q15-9 32-9 20 0 36 11z")
+                    | SEND
+
+        footer.page-footer
+            .container
+                .row
+                    .col.l6.s12
+                        img(alt="Logo" src="https://raw.githubusercontent.com/JWDonovan/fauxpseudo/master/img/logo.png").footer-logo
+                        a(href=twitchURL)
+                            svg(viewBox=viewBox).footer-social-links
+                                use(href="#twitch")
+                        a(href=twitterURL)
+                            svg(viewBox=viewBox).footer-social-links
+                                use(href="#twitter")
+                        a(href=instagramURL)
+                            svg(viewBox=viewBox).footer-social-links
+                                use(href="#instagram")
+                        a(href=youtubeURL)
+                            svg(viewBox=viewBox).footer-social-links
+                                use(href="#youtube")
+                        a(href=facebookURL)
+                            svg(viewBox=viewBox).footer-social-links
+                                use(href="#facebook")
+
+                    .col.l4.offset-l2.s12
+                        h5.white-text Links
+                        ul
+                            li
+                                a(href="#live").grey-text.text-lighten-3 Watch Live
+                            li
+                                a(href="#contact").grey-text.text-lighten-3 Contact
+                            li
+                                a(href=twitchSubscribeURL).btn.waves-effect.waves-light.twitch-subscribe.twitch-subscribe-footer.red.lighten-1
+                                    svg(viewBox=viewBox).twitch-subscribe-svg
+                                        use(href="#twitch")
+                                    | Subscribe
+
+            .footer-copyright
+                .container
+                    | © 2020 Copyright
+                    a(href="https://fauxpseudo.com/sitemap.xml").grey-text.text-lighten-4.right Sitemap
+
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js")
+        script(src="https://embed.twitch.tv/embed/v1.js")
+        script(src="../ts/script.ts")
