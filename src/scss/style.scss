@@ -14,6 +14,7 @@ $twitter-color: #1da1f2;
 $instagram-color: #c13584;
 $youtube-color: #ff0000;
 $facebook-color: #1278f3;
+$tiktok-color: #fe2c55;
 
 html {
     font: $font-size $font-family;
@@ -71,6 +72,10 @@ body {
     fill: $facebook-color;
 }
 
+.tiktok-svg {
+    fill: $tiktok-color;
+}
+
 .bottom {
     bottom: 7em;
     position: fixed;
@@ -89,8 +94,14 @@ body {
     }
     
     .instagram-svg,
-    .facebook-svg {
+    .facebook-svg,
+    .tiktok-svg {
         margin-right: 0;
+    }
+
+    .tiktok-svg {
+        margin-left: .25em;
+        padding: .125em 0;
     }
 }
 
@@ -126,12 +137,16 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 50em;
+    max-width: 60em;
     padding: 0 4em;
     
     &-link {
         margin-bottom: 1em;
         width: 6em;
+
+        .tiktok-svg {
+            height: 5.75em;
+        }
     }
     
     &-svg {
@@ -145,19 +160,31 @@ body {
         margin: 0;
         text-align: center;
     }
+
+    &-label-tiktok {
+        margin-top: .5em;
+    }
     
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 815px) {
         &-link {
             max-width: 4em;
         }
+
+        .tiktok-svg {
+            height: 3.75em;
+        }
     }
     
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 640px) {
         align-items: center;
         flex-direction: column;
         
         &-link {
             max-width: 6em;
+        }
+
+        .tiktok-svg {
+            height: 5.75em;
         }
     }
     
@@ -165,12 +192,26 @@ body {
         &-link {
             max-width: 4em;
         }
+
+        .tiktok-svg {
+            height: 3.75em;
+        }
     }
 }
 
 .live {
     height: 100vh;
     max-height: 100vh;
+}
+
+.tiktok-embed {
+    background-color: $gray;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    blockquote {
+        border-left: 0;
+    }
 }
 
 // .contact {
@@ -288,6 +329,10 @@ body {
 
 .facebook-svg:hover {
     fill: $facebook-color;
+}
+
+.tiktok-svg:hover {
+    fill: $tiktok-color;
 }
 
 

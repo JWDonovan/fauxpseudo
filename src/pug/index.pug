@@ -1,9 +1,10 @@
 - var twitchURL = "https://www.twitch.tv/imfauxpseudo"
-- var twitterURL = "https://twitter.com/realfauxpseudo"
-- var instagramURL = "https://www.instagram.com/itzfauxpseudo"
+- var twitterURL = "https://twitter.com/imfauxpseudo"
+- var instagramURL = "https://www.instagram.com/imfauxpseudo"
 - var youtubeURL = "https://www.youtube.com/fauxpseudo"
-- var facebookURL = "https://www.facebook.com/Fauxpseudo"
+- var facebookURL = "https://www.facebook.com/imfauxpseudo"
 - var twitchSubscribeURL = "https://www.twitch.tv/subs/imfauxpseudo"
+- var tiktokURL = "https://www.tiktok.com/@imfauxpseudo"
 - var viewBox = "0 0 1792 1792"
 
 doctype html
@@ -44,6 +45,11 @@ html(lang="en-us")
                         svg(viewBox=viewBox).dropdown-svg.facebook-svg
                             path(d="M1376 128q119 0 203.5 84.5t84.5 203.5v960q0 119-84.5 203.5t-203.5 84.5h-188v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-532q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960z")#facebook
                         | Facebook
+                li
+                    a(href=tiktokURL)
+                        svg(viewBox="0 0 448 512").dropdown-svg.tiktok-svg
+                            path(d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z")#tiktok
+                        | TikTok
 
             ul.sidenav#mobile-menu
                 img(alt="Logo" src="https://raw.githubusercontent.com/JWDonovan/fauxpseudo/master/img/logo.png").sidenav-logo
@@ -76,6 +82,9 @@ html(lang="en-us")
                         a(href=facebookURL)
                             svg(viewBox=viewBox).mobile-svg.facebook-svg
                                 use(href="#facebook")
+                        a(href=tiktokURL)
+                            svg(viewBox="0 0 448 512").mobile-svg.tiktok-svg
+                                use(href="#tiktok")
 
             nav(role="navigation")
                 .nav-wrapper
@@ -124,8 +133,27 @@ html(lang="en-us")
                     svg(viewBox=viewBox).links-svg.facebook-svg
                         use(href="#facebook")
                     p.links-label Facebook
+                a(href=tiktokURL).links-link.hvr-float-shadow
+                    svg(viewBox="0 0 448 512").links-svg.tiktok-svg
+                        use(href="#tiktok")
+                    p.links-label.links-label-tiktok TikTok
 
         section.live#live
+
+        section.tiktok-embed
+            blockquote.tiktok-embed(cite="https://www.tiktok.com/@imfauxpseudo/video/6917755274375843078" data-video-id="6917755274375843078" style="max-width: 605px; min-width: 325px;")
+                section
+                    a(href="https://www.tiktok.com/@imfauxpseudo" target="_blank" title="@imfauxpseudo") @imfauxpseudo
+                    p he thought he was gonna stim glitch his way to victory?? I THINK THE F$&#38;K NOT
+                        a(href="https://www.tiktok.com/tag/cod" target="_blank" title="cod") ##cod
+                        a(href="https://www.tiktok.com/tag/callofdutywarzone" target="_blank" title="callofdutywarzone") ##callofdutywarzone
+                        a(href="https://www.tiktok.com/tag/warzone" target="_blank" title="warzone") ##warzone
+                        a(href="https://www.tiktok.com/tag/warzoneclips" target="_blank" title="warzoneclips") ##warzoneclips
+                        a(href="https://www.tiktok.com/tag/stimglitch" target="_blank" title="stimglitch") ##stimglitch
+                        a(href="https://www.tiktok.com/tag/fy" target="_blank" title="fy") ##fy
+                        a(href="https://www.tiktok.com/tag/fyp" target="_blank" title="fyp") ##fyp
+                    a(href="https://www.tiktok.com/music/original-sound-6917755257300716294" target="_blank" title="♬ original sound - Rob Lento") ♬ original sound - Rob Lento
+            script(async src="https://www.tiktok.com/embed.js")
 
         section.contact#contact
             form(data-netlify="true" method="post" name="contact").contact-form
@@ -162,6 +190,9 @@ html(lang="en-us")
                         a(href=facebookURL)
                             svg(viewBox=viewBox).footer-social-links
                                 use(href="#facebook")
+                        a(href=tiktokURL)
+                            svg(viewBox="0 0 448 512").footer-social-links
+                                use(href="#tiktok")
 
                     .col.l4.offset-l2.s12
                         h5.white-text Links
